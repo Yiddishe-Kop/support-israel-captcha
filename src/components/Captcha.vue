@@ -36,7 +36,7 @@
         </transition>
       </svg>
       <p class="ms-4">I support Israel</p>
-      <logo class="w-10 ms-3 -my-1.5" theme="dark" full />
+      <IsraelLogo class="w-10 ms-3 -my-1.5" theme="dark" full />
     </label>
     <p class="text-gray-700 mt-2 text-xs">
       Please click the checkbox above to prove that you're not a robot.
@@ -55,7 +55,7 @@
 <script setup>
 import { ref, watch } from "vue";
 import { confettiBurst } from "../composables/confetti";
-import Logo from "./Logo.vue";
+import IsraelLogo from "./Logo.vue";
 
 const captchaContainer = ref(null);
 const checked = ref(false);

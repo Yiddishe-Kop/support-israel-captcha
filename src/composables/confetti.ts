@@ -1,6 +1,6 @@
 import Confetti from "canvas-confetti";
 
-const themeColors = ["#d61f69", "#fff", "#0038B8"];
+const themeColors = ["#ffffff", "#0038B8"];
 
 const randomBetween = (min, max) => {
   min = Math.ceil(min);
@@ -40,7 +40,7 @@ export const confettiBurst = (
     });
   } else {
     Confetti({
-      particleCount: 300,
+      particleCount: 500,
       spread: 80,
       origin,
       colors: themeColors,

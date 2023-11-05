@@ -3,7 +3,7 @@ import Captcha from "./components/Captcha.vue";
 import "./assets/main.css";
 
 function getScriptUrl() {
-  console.log("getScriptUrl", document.currentScript);
+  console.log("getScriptUrl", document.currentScript, import.meta.url);
   if (document.currentScript) {
     const scriptSrc = document.currentScript.src;
     const url = new URL(scriptSrc);
@@ -13,13 +13,13 @@ function getScriptUrl() {
     return window.location.href;
   }
 }
+const DOMAIN = "https://support-israel-captcha.vercel.app";
 
 function loadStyles() {
   const url = getScriptUrl();
-  const domain = url.origin;
   const style = document.createElement("link");
   style.rel = "stylesheet";
-  style.href = `${domain}/assets/main.css`;
+  style.href = `${DOMAIN}/assets/main.css`;
   document.head.appendChild(style);
 }
 

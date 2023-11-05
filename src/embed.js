@@ -24,7 +24,7 @@ function mountIsraelCaptcha() {
 // Mount the captcha manually using the global function
 window.mountIsraelCaptcha = mountIsraelCaptcha;
 
-const urlParams = new URLSearchParams(getScriptUrl().searchParams);
+const urlParams = getScriptUrl().searchParams;
 const shouldAutoMount = urlParams.get("mount");
 
 if (shouldAutoMount) {

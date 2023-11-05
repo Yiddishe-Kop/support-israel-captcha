@@ -5,7 +5,8 @@ import "./assets/main.css";
 function getScriptUrl() {
   if (document.currentScript) {
     const scriptSrc = document.currentScript.src;
-    return new URL(scriptSrc);
+    const url = new URL(scriptSrc);
+    console.log({ scriptSrc, url, origin: url.origin });
   } else {
     // If document.currentScript is not available (e.g., in some older browsers), you might need a fallback.
     return window.location.href;

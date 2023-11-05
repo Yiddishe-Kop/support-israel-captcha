@@ -1,4 +1,3 @@
-import { inject } from "@vercel/analytics";
 import { createApp } from "vue";
 import Captcha from "./components/Captcha.vue";
 import "./assets/main.css";
@@ -20,7 +19,6 @@ function mountIsraelCaptcha() {
   const containerId = window.captchaContainerId || "captcha-container";
   console.log({ containerId });
   createApp(Captcha).mount(`#${containerId}`);
-  inject();
 }
 
 // Mount the captcha manually using the global function

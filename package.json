@@ -11,7 +11,6 @@
     "vue": "^3.3.4"
   },
   "devDependencies": {
-    "@vercel/analytics": "^1.1.1",
     "@vitejs/plugin-vue": "^4.4.0",
     "autoprefixer": "^10.4.16",
     "canvas-confetti": "^1.9.0",

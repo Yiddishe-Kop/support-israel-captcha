@@ -35,7 +35,7 @@
           />
         </svg>
       </a>
-      <Logo class="w-14 sm:w-16 shrink-0" theme="dark" full />
+      <IsraelLogo class="w-14 sm:w-16 shrink-0" theme="dark" full />
       <a
         href="https://github.com/Yiddishe-Kop/support-israel-captcha"
         target="_blank"
@@ -55,7 +55,7 @@
 </template>
 
 <script setup>
-import Logo from "./Logo.vue";
+import IsraelLogo from "./IsraelLogo.vue";
 </script>
 
 <style lang="scss">

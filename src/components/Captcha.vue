@@ -55,7 +55,7 @@
 <script setup>
 import { ref, watch } from "vue";
 import { confettiBurst } from "../composables/confetti";
-import IsraelLogo from "./Logo.vue";
+import IsraelLogo from "./IsraelLogo.vue";
 
 const captchaContainer = ref(null);
 const checked = ref(false);

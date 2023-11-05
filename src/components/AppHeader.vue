@@ -6,7 +6,7 @@
     <div
       class="ps-2 md:ps-6 flex max-w-screen-xl mx-auto shrink-0 items-center"
     >
-      <Logo class="w-14 sm:w-16 shrink-0" theme="dark" full />
+      <IsraelLogo class="w-14 sm:w-16 shrink-0" theme="dark" full />
       <div class="mx-4">
         <h2 class="text-brand text-blue-800 text-sm/none font-bold uppercase">
           Support Israel
@@ -27,5 +27,5 @@
 </template>
 
 <script setup>
-import Logo from "./Logo.vue";
+import IsraelLogo from "./IsraelLogo.vue";
 </script>

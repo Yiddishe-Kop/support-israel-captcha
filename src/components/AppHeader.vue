@@ -12,7 +12,7 @@
           Support Israel
         </h2>
         <h1
-          class="text-blue-950 uppercase font-black whitespace-nowrap text-2xl/none"
+          class="text-blue-950 uppercase font-black whitespace-nowrap text-xl/none sm:text-2xl/none"
         >
           in its war against terror
         </h1>

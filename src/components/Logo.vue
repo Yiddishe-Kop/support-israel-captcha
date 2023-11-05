@@ -1,3 +1,3 @@
 <template>
-  <img src="/img/logo.svg" alt="Swords Of Iron" />
+  <img src="/img/logo.svg" alt="Support Israel" />
 </template>

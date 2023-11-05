@@ -3,6 +3,7 @@ import Captcha from "./components/Captcha.vue";
 import "./assets/main.css";
 
 function getScriptUrl() {
+  console.log("getScriptUrl", document.currentScript);
   if (document.currentScript) {
     const scriptSrc = document.currentScript.src;
     const url = new URL(scriptSrc);

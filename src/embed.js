@@ -10,7 +10,7 @@ function loadStyles() {
   document.head.appendChild(style);
 }
 
-function mountCaptcha() {
+function mountIsraelCaptcha() {
   loadStyles();
   const containerId = window.captchaContainerId || "captcha-container";
   console.log({ containerId });
@@ -25,6 +25,6 @@ const shouldAutoMount = urlParams.get("mount");
 
 if (shouldAutoMount) {
   document.addEventListener("DOMContentLoaded", function () {
-    mountCaptcha();
+    mountIsraelCaptcha();
   });
 }

@@ -26,6 +26,7 @@ window.mountIsraelCaptcha = mountIsraelCaptcha;
 
 const urlParams = getScriptUrl().searchParams;
 const shouldAutoMount = urlParams.get("mount");
+console.log({ url: getScriptUrl(), urlParams, shouldAutoMount });
 
 if (shouldAutoMount) {
   document.addEventListener("DOMContentLoaded", function () {

@@ -10,7 +10,7 @@ function loadStyles() {
   const url = getScriptUrl();
   const style = document.createElement("link");
   style.rel = "stylesheet";
-  style.href = `${url.origin}/assets/main.css`;
+  style.href = `${url.origin}/assets/embed.css`;
   document.head.appendChild(style);
 }
 

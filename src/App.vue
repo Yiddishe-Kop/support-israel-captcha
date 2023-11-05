@@ -1,11 +1,9 @@
 <template>
-  <div class="">
-    <input type="checkbox" v-model="checkbox" />
-  </div>
+  <section class="p-12 mt-[40vh] flex justify-center">
+    <Captcha />
+  </section>
 </template>
 
 <script setup>
-import { ref } from "vue";
-
-const checkbox = ref(false);
+import Captcha from "./components/Captcha.vue";
 </script>

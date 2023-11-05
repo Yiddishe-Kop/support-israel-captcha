@@ -6,10 +6,10 @@
         Prove That Your Visitors<br />
         Are Human
       </h1>
-      <Captcha class="mt-24" />
+      <Captcha class="mt-12 md:mt-24" />
     </div>
   </section>
-  <div class="max-w-2xl my-8 mx-auto">
+  <div class="max-w-2xl my-8 px-2 mx-auto">
     <article>
       <p>
         The above is a demo of an embedabble Captcha that asks your site
@@ -43,10 +43,12 @@
       </p>
     </article>
   </div>
+  <AppFooter/>
 </template>
 
 <script setup>
 import AppHeader from "./components/AppHeader.vue";
+import AppFooter from "./components/AppFooter.vue";
 import Captcha from "./components/Captcha.vue";
 
 const domain = window.location.origin;
@@ -75,6 +77,6 @@ code {
   @apply bg-slate-100 px-2 rounded-md py-0.5;
 }
 pre {
-  @apply bg-slate-100 p-6 rounded-md text-sm/relaxed text-slate-950;
+  @apply bg-slate-100 p-6 rounded-md text-sm/relaxed overflow-auto text-slate-950;
 }
 </style>

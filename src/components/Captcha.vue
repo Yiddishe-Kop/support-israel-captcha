@@ -2,12 +2,16 @@
   <div class="captcha-embed">
     <div class="font-sans">
       <p class="font-bold">Verify that you're human:</p>
-      <label ref="captchaContainer" for="captcha" class="label group">
+      <label
+        ref="captchaContainer"
+        for="captcha"
+        class="px-4 py-3 mt-2 border-2 relative inline-flex select-none cursor-pointer transition-all hover:border-blue-600 bg-gray-50 hover:bg-gray-100 rounded items-center group"
+      >
         <!-- hidden checkbox -->
         <input
           id="captcha"
           type="checkbox"
-          class="checkbox-input"
+          class="opacity-0 appearance-none absolute top-0 start-0 w-px h-px"
           v-model="checked"
         />
         <!-- visible checkbox -->
@@ -66,12 +70,6 @@ watch(checked, (isChecked) => {
 </script>
 
 <style>
-.label {
-  @apply px-4 py-3 mt-2 border-2 relative inline-flex select-none cursor-pointer transition-all hover:border-blue-600 bg-gray-50 hover:bg-gray-100 rounded items-center;
-}
-.checkbox-input {
-  @apply opacity-0 appearance-none absolute top-0 start-0 w-px h-px;
-}
 .fade-enter-active,
 .fade-leave-active {
   transition: opacity 0.5s ease;

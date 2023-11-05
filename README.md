@@ -4,7 +4,7 @@ An embedabble Captcha that asks your site visitors to prove that they are human 
 
 ## How To Embed
 
-You can embed this Captcha anywhere on the web with just 3 lines of
+You can embed this Captcha anywhere on the web with just 2 lines of
 code.
 
 ```html
@@ -13,13 +13,9 @@ code.
   type="module"
   src="https://support-israel-captcha.vercel.app/assets/embed.js"
 ></script>
-<link
-  rel="stylesheet"
-  href="https://support-israel-captcha.vercel.app/assets/main.css"
-/>
 ```
 
-Simply add these 3 lines of code anywhere you would like to embed the Captcha.
+Simply add these 2 lines of code anywhere you would like to embed the Captcha.
 
 ## Customize The Id
 
@@ -36,8 +32,4 @@ If you want to mount the Captcha on a different element, you can customize the m
   type="module"
   src="https://support-israel-captcha.vercel.app/assets/embed.js"
 ></script>
-<link
-  rel="stylesheet"
-  href="https://support-israel-captcha.vercel.app/assets/main.css"
-/>
 ```

@@ -17,7 +17,7 @@
       </p>
       <h2 id="embed">How To Embed</h2>
       <p>
-        You can embed this Captcha anywhere on the web with just 3 lines of
+        You can embed this Captcha anywhere on the web with just 2 lines of
         code.
       </p>
       <p>
@@ -26,7 +26,7 @@
         }}</pre>
       </p>
       <p>
-        Simply add these 3 lines of code anywhere you would like to embed the
+        Simply add these 2 lines of code anywhere you would like to embed the
         Captcha.
       </p>
       <h2 id="customize-id">Customize The Id</h2>
@@ -56,15 +56,13 @@ import Captcha from "./components/Captcha.vue";
 
 const domain = window.location.origin;
 const embedCode = `\<div id="captcha-container">\<\/div>
-<script type="module" src="${domain}/assets/embed.js">\<\/script>
-<link rel="stylesheet" href="${domain}/assets/main.css" \/\>`;
+<script type="module" src="${domain}/assets/embed.js">\<\/script>`;
 
 const customEmbedCode = `\<div id="my-container">\<\/div>
 <script>
   window.captchaContainerId = "my-container";
 \<\/script>
-<script type="module" src="${domain}/assets/embed.js">\<\/script>
-<link rel="stylesheet" href="${domain}/assets/main.css" \/\>`;
+<script type="module" src="${domain}/assets/embed.js">\<\/script>`;
 </script>
 
 <style lang="scss">

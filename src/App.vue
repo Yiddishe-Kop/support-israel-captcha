@@ -41,6 +41,9 @@
           customEmbedCode
         }}</pre>
       </p>
+      <p>
+        Share this page with your friends and colleagues to help spread the word.
+      </p>
     </article>
   </div>
   <AppFooter/>

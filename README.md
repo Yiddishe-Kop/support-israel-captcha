@@ -1,29 +1,43 @@
-# israel-captcha
+# Prove That Your Visitors Are Human
 
-This template should help get you started developing with Vue 3 in Vite.
+An embedabble Captcha that asks your site visitors to prove that they are human by supporting Israel.
 
-## Recommended IDE Setup
+## How To Embed
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+You can embed this Captcha anywhere on the web with just 3 lines of
+code.
 
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
+```html
+<div id="captcha-container"></div>
+<script
+  type="module"
+  src="https://support-israel-captcha.vercel.app/assets/embed.js"
+></script>
+<link
+  rel="stylesheet"
+  href="https://support-israel-captcha.vercel.app/assets/main.css"
+/>
 ```
 
-### Compile and Hot-Reload for Development
+Simply add these 3 lines of code anywhere you would like to embed the Captcha.
 
-```sh
-npm run dev
-```
+## Customize The Id
 
-### Compile and Minify for Production
+By default the Captcha is mounted on the HTML element with the id of `captcha-container`.
 
-```sh
-npm run build
+If you want to mount the Captcha on a different element, you can customize the mount point by configuring your id like so:
+
+```html
+<div id="my-container"></div>
+<script>
+  window.captchaContainerId = "my-container";
+</script>
+<script
+  type="module"
+  src="https://support-israel-captcha.vercel.app/assets/embed.js"
+></script>
+<link
+  rel="stylesheet"
+  href="https://support-israel-captcha.vercel.app/assets/main.css"
+/>
 ```

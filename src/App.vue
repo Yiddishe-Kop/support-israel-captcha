@@ -29,6 +29,12 @@
         Simply add these 2 lines of code anywhere you would like to embed the
         Captcha.
       </p>
+      <h2 id="js-only">Embed with JS only</h2>
+      <p>
+        If you prefer to embed the Captcha with JavaScript only, you can do so
+        like this:
+      </p>
+      <pre>{{ jsEmbedCode }}</pre>
       <h2 id="customize-id">Customize The Id</h2>
       <p>
         By default the Captcha is mounted on the HTML element with the id of <code>captcha-container</code>
@@ -56,13 +62,21 @@ import Captcha from "./components/Captcha.vue";
 
 const domain = window.location.origin;
 const embedCode = `\<div id="captcha-container">\<\/div>
-<script type="module" src="${domain}/assets/embed.js">\<\/script>`;
+<script type="module" src="${domain}/assets/embed.js?mount=1">\<\/script>`;
+
+const jsEmbedCode = `const script = document.createElement('script')
+script.src = 'https://support-israel-captcha.vercel.app/assets/embed.js'
+script.type = 'module'
+script.onload = () => {
+  window.mountIsraelCaptcha('captcha-container')
+}
+document.head.appendChild(script)`;
 
 const customEmbedCode = `\<div id="my-container">\<\/div>
 <script>
   window.captchaContainerId = "my-container";
 \<\/script>
-<script type="module" src="${domain}/assets/embed.js">\<\/script>`;
+<script type="module" src="${domain}/assets/embed.js?mount=1">\<\/script>`;
 </script>
 
 <style lang="scss">

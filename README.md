@@ -11,11 +11,25 @@ code.
 <div id="captcha-container"></div>
 <script
   type="module"
-  src="https://support-israel-captcha.vercel.app/assets/embed.js"
+  src="https://support-israel-captcha.vercel.app/assets/embed.js?mount=1"
 ></script>
 ```
 
 Simply add these 2 lines of code anywhere you would like to embed the Captcha.
+
+## Embed with JS only
+
+If you prefer to embed the Captcha with JavaScript only, you can do so like this:
+
+```js
+const script = document.createElement("script");
+script.src = "https://support-israel-captcha.vercel.app/assets/embed.js";
+script.type = "module";
+script.onload = () => {
+  window.mountIsraelCaptcha("captcha-container");
+};
+document.head.appendChild(script);
+```
 
 ## Customize The Id
 
@@ -30,6 +44,6 @@ If you want to mount the Captcha on a different element, you can customize the m
 </script>
 <script
   type="module"
-  src="https://support-israel-captcha.vercel.app/assets/embed.js"
+  src="https://support-israel-captcha.vercel.app/assets/embed.js?mount=1"
 ></script>
 ```

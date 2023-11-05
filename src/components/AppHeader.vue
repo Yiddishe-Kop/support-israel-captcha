@@ -1,7 +1,7 @@
 <template>
   <header
     id="top"
-    class="sticky text-gray-950 border-b border-white/20 py-2 top-0 bg-gray-300 backdrop-blur-xl z-40"
+    class="sticky text-gray-950 border-b border-white/40 py-2 top-0 bg-white/50 backdrop-blur-xl z-40"
   >
     <div
       class="ps-2 md:ps-6 flex max-w-screen-xl mx-auto shrink-0 items-center"

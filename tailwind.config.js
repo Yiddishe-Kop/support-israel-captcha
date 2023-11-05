@@ -7,6 +7,7 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ["Open Sans", ...defaultTheme.fontFamily.sans],
+        mono: ["Fira Code", ...defaultTheme.fontFamily.mono],
       },
     },
   },

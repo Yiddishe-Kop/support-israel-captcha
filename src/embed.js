@@ -1,6 +1,6 @@
 import { createApp } from "vue";
 import Captcha from "./components/Captcha.vue";
-import "./assets/main.css";
+import "./assets/embed.scss";
 
 function getScriptUrl() {
   return new URL(import.meta.url);

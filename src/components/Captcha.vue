@@ -22,7 +22,7 @@
         class="transition-all group-hover:scale-110 w-8"
         viewBox="0 0 24 24"
       >
-        <transition name="fade">
+        <transition name="captcha-fade">
           <path
             v-if="!checked"
             fill="currentColor"
@@ -41,7 +41,7 @@
     <p class="font-sans text-gray-700 mt-2 text-xs">
       Please click the checkbox above to prove that you're not a robot.
     </p>
-    <p class="font-sans text-gray-700 mt-2 text-sm">
+    <p v-if="!hideInfo" class="font-sans text-gray-700 mt-2 text-sm">
       <a
         href="https://oct7map.com/"
         target="_blank"
@@ -72,6 +72,13 @@ import { ref, watch } from "vue";
 import { confettiBurst } from "../composables/confetti";
 import IsraelLogo from "./IsraelLogo.vue";
 
+defineProps({
+  hideInfo: {
+    type: Boolean,
+    default: false,
+  },
+});
+
 const captchaContainer = ref(null);
 const checked = ref(false);
 
@@ -83,13 +90,13 @@ watch(checked, (isChecked) => {
 </script>
 
 <style>
-.fade-enter-active,
-.fade-leave-active {
+.captcha-fade-enter-active,
+.captcha-fade-leave-active {
   transition: opacity 0.5s ease !important;
 }
 
-.fade-enter-from,
-.fade-leave-to {
+.captcha-fade-enter-from,
+.captcha-fade-leave-to {
   opacity: 0 !important;
 }
 </style>

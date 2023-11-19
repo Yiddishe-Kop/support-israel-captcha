@@ -14,11 +14,11 @@ function loadStyles() {
   document.head.appendChild(style);
 }
 
-function mountIsraelCaptcha() {
+function mountIsraelCaptcha(props = {}) {
   loadStyles();
   const containerId = window.captchaContainerId || "captcha-container";
-  console.log({ containerId });
-  createApp(Captcha).mount(`#${containerId}`);
+  createApp(Captcha, props).mount(`#${containerId}`);
+  console.log("captcha mounted", props);
 }
 
 // Mount the captcha manually using the global function
@@ -26,10 +26,13 @@ window.mountIsraelCaptcha = mountIsraelCaptcha;
 
 const urlParams = getScriptUrl().searchParams;
 const shouldAutoMount = urlParams.get("mount");
-console.log({ url: getScriptUrl(), urlParams, shouldAutoMount });
+const hideInfo = !!urlParams.get("hide_info");
+console.log({ url: getScriptUrl(), urlParams, shouldAutoMount, hideInfo });
 
 if (shouldAutoMount) {
   document.addEventListener("DOMContentLoaded", function () {
-    mountIsraelCaptcha();
+    mountIsraelCaptcha({
+      hideInfo,
+    });
   });
 }
